@@ -1,0 +1,47 @@
+#Nick Caravaggio
+#ncaravaggio
+#C02617510
+
+overwatch_top_hero_pickrates_string = '''
+Hero           Pickrate          Winrate
+-----------------------------------------
+Ana             11.92%            50.10%
+Zarya            8.55%            52.30%
+Reinhardt        8.08%            51.14%
+Mercy            7.17%            51.94%
+Roadhog          6.74%            51.22%
+Moira            6.34%            49.52%
+Ashe             5.40%            52.90%
+Genji            4.60%            49.84%
+Mccree           4.08%            46.31%
+Sigma            3.22%            50.50%
+'''
+
+overwatch_top_hero_pickrates_list = ['Ana', 11.92, 50.10, 'Zarya', 8.55, 52.30, 'Reinhardt', 8.08, 51.14, 7.17,
+  'Mercy', 7.17, 51.94, 'Roadhog', 6.74, 51.22, 'Moira', 6.34, 49.52,
+  'Ashe', 5.40, 52.90, 'Genji', 4.60, 49.84, 'Mccree', 4.08, 46.31,
+  'Sigma', 3.22, 50.50]
+
+class Hero:
+    def __init__(self, hero, pickrate, winrate):
+        self.hero = hero
+        self.pickrate = pickrate
+        self.winrate = winrate
+
+    def printHero(self):
+        print("Hero Name: ", self.hero, ", Pickrate: ", self.pickrate,
+              ", Winrate: ", self.winrate)
+
+hero1 = Hero('Ana', 11.92, 50.10)
+hero2 = Hero('Zarya', 8.55, 52.30)
+hero3 = Hero('Reinhardt', 8.08, 51.14)
+hero4 = Hero('Mercy', 7.17, 51.94)
+hero5 = Hero('Roadhog', 6.74, 51.22)
+hero6 = Hero('Moira', 6.34, 49.52)
+hero7 = Hero('Ashe', 5.40, 52.90)
+hero8 = Hero('Genji', 4.60, 49.84)
+hero9 = Hero('Mccree', 4.08, 46.31)
+hero10 = Hero('Sigma', 3.22, 50.50)
+
+hero1.printHero()
+hero2.printHero()
